@@ -1,0 +1,136 @@
+html,
+header,
+body,
+div,
+nav,
+p,
+a,
+figure,
+img,
+h1,
+button,
+main,
+section {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%);
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.875rem 0 0 1.5625rem;
+  height: 4.25rem;
+}
+
+.container__logo {
+  flex: 1;
+}
+
+header nav {
+  display: flex;
+  flex: 1;
+}
+
+.icons {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1.5625rem;
+}
+
+.container section {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5625rem;
+}
+
+.container__photo figure {
+  margin: 0 auto;
+  width: 18.75rem;
+  height: 13.8125rem;
+}
+
+.container__photo figure img {
+  position: absolute;
+  top: 31px;
+  width: 20.75rem;
+}
+
+.container__info {
+  color: #f9f9f9;
+  padding-left: 1.5625rem;
+}
+.container__info p:first-child {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.6875rem;
+}
+
+.container__info h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 109%;
+  margin-top: 0.375rem;
+}
+
+.container__info p:nth-child(3) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 180%;
+  margin-top: 1rem;
+}
+
+.container__button {
+  margin-top: 3.625rem;
+}
+
+.container__button button {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+  font-style: normal;
+  text-transform: uppercase;
+  display: flex;
+  width: 14.0625rem;
+  height: 2.8125rem;
+  margin-left: 0.8125rem;
+  justify-content: center;
+  align-items: center;
+  background: #658e76;
+  border: none;
+  color: #f9f9f9;
+  cursor: pointer;
+
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+.container__button button span {
+  margin-left: 1.125rem;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  transform: skew(30deg);
+}
+
+.container__button button span::before {
+  content: url('/assets/play.svg');
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  height: 1.25rem;
+  width: 1.25rem;
+}
