@@ -134,3 +134,65 @@ header nav {
   height: 1.25rem;
   width: 1.25rem;
 }
+.container__button button:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding-top: 2.8125rem;
+    /* height: 4.25rem; */
+  }
+  .icons {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.8125rem;
+  }
+  .container__logo {
+    flex: 2;
+  }
+  .container section {
+    flex-direction: row;
+    max-width: 64rem;
+    margin: 4.6875rem auto 0;
+  }
+  .container__info {
+    flex: 1;
+  }
+
+  .container__photo {
+    flex: 1;
+  }
+
+  .container__photo figure img {
+    position: absolute;
+    top: -3.125rem;
+    width: 31.25rem;
+  }
+  .container__photo figure {
+    position: relative;
+    width: 31.25rem;
+  }
+  .container__button {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__button button:last-child {
+    display: initial;
+    background-color: transparent;
+    border: 2px solid #658e76;
+  }
+  .container__info p:nth-child(3) {
+    font-size: 16px;
+    line-height: 1.8rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 2.875rem;
+  }
+  .container__info h1 {
+    font-size: 4.25rem;
+    line-height: 4.6325rem;
+    margin-top: 0.875rem;
+  }
+}
